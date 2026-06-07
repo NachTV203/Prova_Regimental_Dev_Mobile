@@ -1,0 +1,14 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appProvaA1Caneta.Views.TelaAlterarCaneta"
+             Title="Alterar Caneta"
+             BackgroundImageSource="fundocaneta.png">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Entry x:Name="txtFabricante" Text="{Binding canFabricante}" Placeholder="Fabricante" BackgroundColor="White" />
+        <Entry x:Name="txtCor" Text="{Binding canCor}" Placeholder="Cor" BackgroundColor="White" />
+        
+        <Button Text="Atualizar" ImageSource="salvarcaneta.png" BackgroundColor="Blue" TextColor="White" Clicked="btnAtualizar_Clicked" />
+        <Button Text="Excluir" ImageSource="excluircaneta.png" BackgroundColor="Red" TextColor="White" Clicked="btnExcluir_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,13 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appProvaA1Caneta.Views.TelaIncluirCaneta"
+             Title="Incluir Caneta"
+             BackgroundImageSource="fundocaneta.png">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Entry x:Name="txtFabricante" Placeholder="Fabricante da Caneta" BackgroundColor="White" />
+        <Entry x:Name="txtCor" Placeholder="Cor da Caneta" BackgroundColor="White" />
+
+        <Button Text="Salvar" ImageSource="salvarcaneta.png" BackgroundColor="Green" TextColor="White" Clicked="btnSalvar_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>

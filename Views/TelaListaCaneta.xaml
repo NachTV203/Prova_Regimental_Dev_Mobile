@@ -1,0 +1,24 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appProvaA1Caneta.Views.TelaListaCaneta"
+             Title="Lista de Canetas"
+             BackgroundImageSource="fundocaneta.png">
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Incluir" IconImageSource="incluircaneta.png" Clicked="btnNovo_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ListView x:Name="lstCanetas" HasUnevenRows="True" ItemSelected="lstCanetas_ItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <VerticalStackLayout Padding="15">
+                        <Label Text="{Binding canFabricante}" FontAttributes="Bold" FontSize="18"/>
+                        <Label Text="{Binding canCor}" TextColor="Gray" />
+                    </VerticalStackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
